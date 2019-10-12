@@ -89,6 +89,13 @@ The SendGrid API is used for distributing and sending emails to users. Please re
 
 We used our own SendGrid email templates hosting on the SendGrid website. However, we encourage that you make your own templates. *(We also included an example email template HTML in under the flaskr folder: ```driver_email.html```)* You could certainly have the templates locally and ease the process of modifying the templates.
 
+### Setting up Google Maps JavaScript API
+
+After enable Google Maps JavaScript API, replace line 8 in ```public/index.html``` to
+<pre>
+https://maps.googleapis.com/maps/api/js?key=<b>YOUR-KEY-HERE</b>&libraries=places
+</pre>
+
 
 ### Setting up ```.env``` file
 After pulled this project, go to the docker-compose.yml directory and make an ```.env``` file with 
